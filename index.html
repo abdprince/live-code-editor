@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Live Code Editor</title>
 
+    <!-- ربط ملف التنسيق -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- الحاوية الرئيسية -->
+    <div class="container">
+
+        <!-- قسم المحرر -->
+        <div class="editor">
+
+            <h3>HTML</h3>
+            <textarea id="html-code"></textarea>
+
+            <h3>CSS</h3>
+            <textarea id="css-code"></textarea>
+
+            <h3>JavaScript</h3>
+            <textarea id="js-code"></textarea>
+
+        </div>
+
+        <!-- قسم المعاينة -->
+        <div class="preview">
+            <iframe id="result"></iframe>
+        </div>
+
+    </div>
+
+    <!-- ربط ملف الجافاسكريبت -->
+    <script src="script.js"></script>
+</body>
+</html>
