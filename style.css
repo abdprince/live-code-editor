@@ -11,7 +11,7 @@
 }
 
 .editor {
-    width: 50%;
+    width: 40%;
     padding: 10px;
     background-color: #1e1e1e;
     color: #ffffff;
@@ -41,7 +41,7 @@
 }
 
 .preview {
-    width: 50%;
+    width: 60%;
     background-color: #ffffff;
 }
 
