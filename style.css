@@ -10,7 +10,7 @@ html, body {
 }
 .container {
     display: flex;
-    height: 100vh;
+    height: 100%;
 }
 .editor {
     width: 40%;
