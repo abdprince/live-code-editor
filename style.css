@@ -23,9 +23,11 @@ html, body {
 }
 }
 .editor h3 {
-    margin: 10px 0 5px;
-    font-size: 14px;
-    font-weight: normal;
+    margin: 12px 0 6px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #cccccc;
 }
 .editor textarea {
     width: 100%;
