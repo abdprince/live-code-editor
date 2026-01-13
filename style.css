@@ -21,7 +21,6 @@ html, body {
 
     border-right: 2px solid #111;
 }
-}
 .editor h3 {
     margin: 12px 0 6px;
     font-size: 12px;
@@ -94,9 +93,5 @@ html, body {
     /* العناوين أصغر قليلًا */
     .editor h3 {
         font-size: 13px !important;
-    }
-    .editor, .preview {
-    width: 100% !important; /* يضمن تجاوز أي تعديل سابق */
-    height: auto !important;
     }
 }
