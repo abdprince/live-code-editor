@@ -18,35 +18,33 @@ html, body {
     background-color: #1e1e1e;
     color: #ffffff;
 
-    display: flex;           /* ليصبح Flex Container */
-    flex-direction: column;  /* ترتيب العناصر عمودي */
-    gap: 10px;               /* مسافة بسيطة بين كل محرر */
-    height: 100%;            /* ليملأ مساحة .container */
-    overflow-y: hidden;      /* منع overflow داخل العمود */
-
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     border-right: 2px solid #111;
 }
 
-/* كل محرر فرعي (HTML, CSS, JS) يتساوى بالمساحة */
+.editor h3 {
+    flex: 0 0 auto; /* لا يشغل مساحة إضافية */
+    margin: 6px 0;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #cccccc;
+}
+
 .editor textarea {
-    flex: 1;                 /* يملأ الفراغ بالتساوي */
+    flex: 1 1 0; /* يملأ الفراغ المتبقي */
     width: 100%;
     padding: 10px;
     background-color: #252526;
     color: #ffffff;
     border: 1px solid #333;
     border-radius: 4px;
-    resize: vertical;        /* ما زلنا نسمح بالسحب */
+    resize: vertical;
     font-family: monospace;
     font-size: 13px;
     line-height: 1.4;
-}
-.editor h3 {
-    margin: 12px 0 6px;
-    font-size: 12px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    color: #cccccc;
 }
 
 .preview {
