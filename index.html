@@ -1,34 +1,39 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>محرر أكواد مباشر</title>
+    <meta charset="UTF-8" />
+    <title>Live Code Editor</title>
 
-  <!-- ملف تمييز الأكواد Prism -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism.css">
-
-  <!-- ملف التنسيق الخاص بالمحرر -->
-  <link rel="stylesheet" href="style.css">
+    <!-- ربط ملف التنسيق -->
+    <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-  <!-- نافذة إدخال واحدة فقط -->
-  <pre>
-    <code
-      id="editor"
-      class="language-html"
-      contenteditable="true">
-<!-- اكتب كودك هنا -->
-    </code>
-  </pre>
+    <!-- الحاوية الرئيسية -->
+    <div class="container">
 
-  <!-- ملفات Prism -->
-  <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-markup.min.js"></script>
+        <!-- قسم المحرر -->
+        <div class="editor">
 
-  <!-- ملف الجافاسكريبت الخاص بالمحرر -->
-  <script src="script.js"></script>
+            <h3>HTML</h3>
+            <textarea id="html-code"></textarea>
 
+            <h3>CSS</h3>
+            <textarea id="css-code"></textarea>
+
+            <h3>JavaScript</h3>
+            <textarea id="js-code"></textarea>
+
+        </div>
+
+        <!-- قسم المعاينة -->
+        <div class="preview">
+            <iframe id="result"></iframe>
+        </div>
+
+    </div>
+
+    <!-- ربط ملف الجافاسكريبت -->
+    <script src="script.js"></script>
 </body>
 </html>
