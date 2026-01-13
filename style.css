@@ -23,6 +23,7 @@ html, body {
     flex-direction: column;
     height: 100%;
     border-right: 2px solid #111;
+    border: 2px solid red;
 }
 
 .editor h3 {
