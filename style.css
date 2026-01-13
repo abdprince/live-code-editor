@@ -95,4 +95,8 @@ html, body {
     .editor h3 {
         font-size: 13px !important;
     }
+    .editor, .preview {
+    width: 100% !important; /* يضمن تجاوز أي تعديل سابق */
+    height: auto !important;
+    }
 }
