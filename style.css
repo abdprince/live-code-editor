@@ -11,7 +11,7 @@ html, body {
 .container {
     display: flex;
     height: 100%;
-    border: 2px solid red;
+
 }
 .editor {
     width: 40%;
@@ -23,13 +23,13 @@ html, body {
     flex-direction: column;
     height: 100%;
     border-right: 2px solid #111;
-    border: 2px solid red;
+
 }
 
 .editor h3 {
     flex: 0 0 auto; /* لا يشغل مساحة إضافية */
     margin: 6px 0;
-    font-size: 12px;
+    font-size: 18px;
     font-weight: bold;
     letter-spacing: 1px;
     color: #cccccc;
@@ -38,7 +38,7 @@ html, body {
 .editor textarea {
     flex: 1 1 0; /* يملأ الفراغ المتبقي */
     width: 100%;
-    padding: 10px;
+    padding: 2px;
     background-color: #252526;
     color: #ffffff;
     border: 1px solid #333;
