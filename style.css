@@ -57,3 +57,38 @@ html, body {
     height: 100%;
     border: none;
 }
+
+/* تحسين العرض على الشاشات الصغيرة (الموبايل) */
+@media (max-width: 768px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .editor,
+    .preview {
+        width: 100%;
+        height: auto;
+    }
+
+    .editor {
+        border-right: none;
+        border-bottom: 2px solid #111;
+    }
+
+    .preview {
+        height: 50vh;
+    }
+
+    .editor textarea {
+        min-height: 160px;
+        font-size: 15px;
+    }
+
+    .editor h3 {
+        font-size: 13px;
+    }
+    .preview iframe {
+    min-height: 300px;
+    }
+}
