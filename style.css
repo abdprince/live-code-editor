@@ -17,9 +17,29 @@ html, body {
     padding: 10px;
     background-color: #1e1e1e;
     color: #ffffff;
-    overflow-y: auto;
+
+    display: flex;           /* ليصبح Flex Container */
+    flex-direction: column;  /* ترتيب العناصر عمودي */
+    gap: 10px;               /* مسافة بسيطة بين كل محرر */
+    height: 100%;            /* ليملأ مساحة .container */
+    overflow-y: hidden;      /* منع overflow داخل العمود */
 
     border-right: 2px solid #111;
+}
+
+/* كل محرر فرعي (HTML, CSS, JS) يتساوى بالمساحة */
+.editor textarea {
+    flex: 1;                 /* يملأ الفراغ بالتساوي */
+    width: 100%;
+    padding: 10px;
+    background-color: #252526;
+    color: #ffffff;
+    border: 1px solid #333;
+    border-radius: 4px;
+    resize: vertical;        /* ما زلنا نسمح بالسحب */
+    font-family: monospace;
+    font-size: 13px;
+    line-height: 1.4;
 }
 .editor h3 {
     margin: 12px 0 6px;
@@ -28,25 +48,7 @@ html, body {
     letter-spacing: 1px;
     color: #cccccc;
 }
-.editor textarea {
-    width: 100%;
-    min-height: 120px;
-    margin-bottom: 12px;
-    padding: 10px;
 
-    background-color: #252526;
-    color: #ffffff;
-
-    border: 1px solid #333;
-    border-radius: 4px;
-
-    resize: vertical;
-    outline: none;
-
-    font-family: monospace;
-    font-size: 13px;
-    line-height: 1.4;
-}
 .preview {
     width: 60%;
     background-color: #ffffff;
