@@ -11,6 +11,7 @@ html, body {
 .container {
     display: flex;
     height: 100%;
+    border: 2px solid red;
 }
 .editor {
     width: 40%;
